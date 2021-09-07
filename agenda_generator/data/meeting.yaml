@@ -1,25 +1,25 @@
 date: #yyyy/mm/dd
-  2021/09/01
+  2021/09/08
 language:       English # English or Chinese
-location:       GuGong,1,1 # Room, Floor, Building
-theme:          Trust
+location:       TianAnMen,1,1 # Room, Floor, Building
+theme:          Hometown
 roles:
   SAA:      Nan Yang
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Madison Wang
-  GE:       Bonnie Wang
-  Timer:    Henry
+  TM:       Xiaoyi Liu
+  GE:       Nan Yang
+  Timer:    Lily
   Ah-Counter:
-  Wordsmith: 
-  TTM: Brenda Wang
-  TTE: Yue Li
-  SP1:      Hongxia Huang
-  SP1 Title:      From Challenge to Experience
-  IE1:      Serena
-  SP2:      Sunny Wu
-  SP2 Title:      Understand My Communication Style
-  IE2:      Bonnie Wang
+  Wordsmith: Nan Yang
+  TTM: Xiaoyi Liu
+  TTE: Shaopeng Bu
+  SP1:      Bofeng
+  SP1 Title:      You are What Your Granparents Ate
+  IE1:      Bill Lin
+  SP2:      Madison
+  SP2 Title:      What is the Similarity between Philippine President and Me?
+  IE2:      Hongxia Huang
   
 
 sessions:
