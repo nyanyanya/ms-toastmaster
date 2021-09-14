@@ -1,25 +1,25 @@
 date: #yyyy/mm/dd
-  2021/09/08
+  2021/09/14
 language:       English # English or Chinese
-location:       TianAnMen,1,1 # Room, Floor, Building
-theme:          Hometown
+location:       ZhongGuanCun,4,2 # Room, Floor, Building
+theme:          Move & Rent
 roles:
   SAA:      Nan Yang
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Xiaoyi Liu
-  GE:       Nan Yang
-  Timer:    Lily
+  TM:       Yue Li
+  GE:       Raymond Lu
+  Timer:    Julia
   Ah-Counter:
-  Wordsmith: Raymond Lu
-  TTM: Xiaoyi Liu
-  TTE: Shaopeng Bu
-  SP1:      Bofeng
-  SP1 Title:      You are What Your Granparents Ate
-  IE1:      Bill Lin
-  SP2:      Madison
-  SP2 Title:      What is the Similarity between Philippine President and Me?
-  IE2:      Hongxia Huang
+  Wordsmith: Christine
+  TTM: Bonnie Wang
+  TTE: Madison Wang
+  SP1:      Hongxia Huang
+  SP1 Title:      To B Marketing 101
+  IE1:      Raymond Lu
+  SP2:      Sawyer
+  SP2 Title:      Would You Like to Join Us?
+  IE2:      Pan Deng
   
 
 sessions:
