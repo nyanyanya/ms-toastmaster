@@ -14,8 +14,8 @@ roles:
   Wordsmith: Christine
   TTM: Bonnie Wang
   TTE: Madison Wang
-  SP1:      Hongxia Huang
-  SP1 Title:      To B Marketing 101
+  SP1:      Nan Yang
+  SP1 Title:      From Couch Potato to Your First Marathon
   IE1:      Raymond Lu
   SP2:      Sawyer
   SP2 Title:      Would You Like to Join Us?
@@ -55,7 +55,29 @@ sessions:
         title:      {default: Return Control to Toastmaster, Chinese: 交接回主持人}
         duration:   1
 
-  - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
+  
+
+  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
+    # skip:       True
+    events:
+      - role:       TM
+        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
+        duration:   1
+
+      - role:       TTM
+        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
+        duration:   25
+        gyr:  1/1.5/2
+
+      - role:       TTE
+        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
+        duration:   6
+        gyr: 4/5/6
+      - role:       TM
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5
+
+- title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
     events:
       - role:       TM
         require:    SP1
@@ -104,26 +126,7 @@ sessions:
         duration:   3
         gyr:  2/2.5/3
 
-      - role:       TM
-        title:      {default: Break Time, Chinese: 中场休息}
-        duration:   5
 
-  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    # skip:       True
-    events:
-      - role:       TM
-        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
-        duration:   1
-
-      - role:       TTM
-        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
-        duration:   25
-        gyr:  1/1.5/2
-
-      - role:       TTE
-        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
-        duration:   6
-        gyr: 4/5/6
 
 
   - title: {default: Evaluation Session, Chinese: 点评环节}
