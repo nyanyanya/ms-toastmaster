@@ -1,25 +1,25 @@
 date: #yyyy/mm/dd
-  2021/09/08
+  2021/09/15
 language:       English # English or Chinese
-location:       TianAnMen,1,1 # Room, Floor, Building
-theme:          Hometown
+location:       ZhongGuanCun,4,2 # Room, Floor, Building
+theme:          Move & Rent
 roles:
   SAA:      Nan Yang
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Xiaoyi Liu
-  GE:       Nan Yang
-  Timer:    Lily
+  TM:       Yue Li
+  GE:       Raymond Lu
+  Timer:    Julia
   Ah-Counter:
-  Wordsmith: Raymond Lu
-  TTM: Xiaoyi Liu
-  TTE: Shaopeng Bu
-  SP1:      Bofeng
-  SP1 Title:      You are What Your Granparents Ate
-  IE1:      Bill Lin
-  SP2:      Madison
-  SP2 Title:      What is the Similarity between Philippine President and Me?
-  IE2:      Hongxia Huang
+  Wordsmith: Christine
+  TTM: Bonnie Wang
+  TTE: Madison Wang
+  SP1:      Nan Yang
+  SP1 Title:      From Couch Potato to Your First Marathon
+  IE1:      Raymond Lu
+  SP2:      Sawyer
+  SP2 Title:      Would You Like to Join Us?
+  IE2:      Pan Deng
   
 
 sessions:
@@ -55,7 +55,27 @@ sessions:
         title:      {default: Return Control to Toastmaster, Chinese: 交接回主持人}
         duration:   1
 
-  - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
+  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
+    # skip:       True
+    events:
+      - role:       TM
+        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
+        duration:   1
+
+      - role:       TTM
+        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
+        duration:   25
+        gyr:  1/1.5/2
+
+      - role:       TTE
+        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
+        duration:   6
+        gyr: 4/5/6
+      - role:       TM
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5
+
+- title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
     events:
       - role:       TM
         require:    SP1
@@ -103,29 +123,7 @@ sessions:
         title:      {default: Evaluate Individual Evaluators, Chinese: 点评个人点评官}
         duration:   3
         gyr:  2/2.5/3
-
-      - role:       TM
-        title:      {default: Break Time, Chinese: 中场休息}
-        duration:   5
-
-  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    # skip:       True
-    events:
-      - role:       TM
-        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
-        duration:   1
-
-      - role:       TTM
-        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
-        duration:   25
-        gyr:  1/1.5/2
-
-      - role:       TTE
-        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
-        duration:   6
-        gyr: 4/5/6
-
-
+       
   - title: {default: Evaluation Session, Chinese: 点评环节}
     #skip:       True
     events:
