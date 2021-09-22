@@ -15,7 +15,7 @@ roles:
   TTE: 
   SP1:      Yue Li
   SP1 Title:      遗落在大山中的记忆
-  IE1:      Marissa Wang
+  IE1:      Marissa Li
   SP2:      Harper
   SP2 Title:      失眠和冲浪
   IE2:      Eileen
@@ -62,7 +62,7 @@ sessions:
         duration:   2
         gyr:  1/1.5/2
       - role: Invited Speaker
-        taker: Marissa Wang
+        taker: Marissa Li
         title: 当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
         duration: 18
         gyr:  14/16/18
