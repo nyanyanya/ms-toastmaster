@@ -54,6 +54,27 @@ sessions:
         title:      {default: Return Control to Toastmaster, Chinese: 交接回主持人}
         duration:   1
   
+  - title: {default: MS-TED}
+    skip: False 
+    events:
+      - role: President
+        title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
+        duration:   2
+        gyr:  1/1.5/2
+      - role: Invited Speaker
+        taker: Marissa Wang
+        title: 当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
+        duration: 18
+        gyr:  14/16/18
+      - role: President
+        title:  {default: Q&A, Chinese: 问答环节}
+        duration: 5
+        gyr:  3/4/5
+      - role:       TM
+        skip: False
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5      
+          
   - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
     events:
       - role:       TM
@@ -71,7 +92,7 @@ sessions:
         duration:   1
       - role:       SP2
         title:      $SP2 Title$
-        duration:   7
+        duration:   10
         gyr:  6/8/10
 
       - role:       TM
@@ -103,6 +124,7 @@ sessions:
         duration:   3
         gyr:  2/2.5/3
       - role:       TM
+        skip: True
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5
 
@@ -124,23 +146,7 @@ sessions:
         gyr: 4/5/6
 
 
-  - title: {default: MS-TED}
-    skip: False 
-    events:
-      - role: President
-        title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
-        duration:   2
-        gyr:  1/1.5/2
-      - role: Invited Speaker
-        taker: Marissa Wang
-        title: 当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
-        duration: 18
-        gyr:  14/16/18
-      - role: President
-        title:  {default: Q&A, Chinese: 问答环节}
-        duration: 5
-        gyr:  3/4/5
-        
+
   - title: {default: Evaluation Session, Chinese: 点评环节}
     #skip:       True
     events:
