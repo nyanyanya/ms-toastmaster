@@ -1,25 +1,24 @@
-date: #yyyy/mm/dd
-  2021/09/15
-language:       English # English or Chinese
-location:       ZhongGuanCun,4,2 # Room, Floor, Building
-theme:          Move & Rent
+date: 2021/09/22 #yyyy/mm/dd
+language:       Chinese # English or Chinese
+location:       中关村,4,2 # Room, Floor, Building
+theme:          当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
 roles:
-  SAA:      Nan Yang
+  SAA:      Jinyu Wang
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Yue Li
+  TM:       Wenji Gao
   GE:       Raymond Lu
-  Timer:    Julia
+  Timer:    
   Ah-Counter:
-  Wordsmith: Christine
-  TTM: Bonnie Wang
-  TTE: Madison Wang
-  SP1:      Nan Yang
-  SP1 Title:      From Couch Potato to Your First Marathon
-  IE1:      Raymond Lu
-  SP2:      Sawyer
-  SP2 Title:      Would You Like to Join Us?
-  IE2:      Pan Deng
+  Wordsmith: 
+  TTM: 
+  TTE: 
+  SP1:      Yue Li
+  SP1 Title:      遗落在大山中的记忆
+  IE1:      Marissa Wang
+  SP2:      Harper
+  SP2 Title:      失眠和冲浪
+  IE2:      Eileen
   
 
 sessions:
@@ -54,28 +53,8 @@ sessions:
       - role:       GE
         title:      {default: Return Control to Toastmaster, Chinese: 交接回主持人}
         duration:   1
-
-  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    # skip:       True
-    events:
-      - role:       TM
-        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
-        duration:   1
-
-      - role:       TTM
-        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
-        duration:   25
-        gyr:  1/1.5/2
-
-      - role:       TTE
-        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
-        duration:   6
-        gyr: 4/5/6
-      - role:       TM
-        title:      {default: Break Time, Chinese: 中场休息}
-        duration:   5
-
-- title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
+  
+  - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
     events:
       - role:       TM
         require:    SP1
@@ -93,7 +72,7 @@ sessions:
       - role:       SP2
         title:      $SP2 Title$
         duration:   7
-        gyr:  5/6/7
+        gyr:  6/8/10
 
       - role:       TM
         require:    SP3
@@ -123,7 +102,45 @@ sessions:
         title:      {default: Evaluate Individual Evaluators, Chinese: 点评个人点评官}
         duration:   3
         gyr:  2/2.5/3
-       
+      - role:       TM
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5
+
+  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
+    skip:       True
+    events:
+      - role:       TM
+        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
+        duration:   1
+
+      - role:       TTM
+        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
+        duration:   25
+        gyr:  1/1.5/2
+
+      - role:       TTE
+        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
+        duration:   6
+        gyr: 4/5/6
+
+
+  - title: {default: MS-TED}
+    skip: False 
+    events:
+      - role: President
+        title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
+        duration:   2
+        gyr:  1/1.5/2
+      - role: Invited Speaker
+        taker: Marissa Wang
+        title: 当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
+        duration: 18
+        gyr:  14/16/18
+      - role: President
+        title:  {default: Q&A, Chinese: 问答环节}
+        duration: 5
+        gyr:  3/4/5
+        
   - title: {default: Evaluation Session, Chinese: 点评环节}
     #skip:       True
     events:
@@ -155,6 +172,7 @@ sessions:
       - role:       SAA
         title:      {default: Guest Feedback (20s/P), Chinese: 访客反馈 (20秒/人)}
         duration:   5
+        skip:       True
         gyr:  3/4/5
       - role:       TM
         title:      {default: Conclusion, Chinese: 总结}
@@ -186,6 +204,7 @@ role_names:
     Timer:  时间官
     Wordsmith: 语法官
     President: 主席
+    Invited Speaker: 特邀演讲者
   default:
     SAA:    Sergeant at Arms
     TM:     Toastmaster
@@ -204,3 +223,4 @@ role_names:
     IE4:    Individual Evaluator 4
     IE5:    Individual Evaluator 5
     IE6:    Individual Evaluator 6
+    Invited Speaker: Invited Speaker
