@@ -1,24 +1,24 @@
-date: 2021/09/22 #yyyy/mm/dd
-language:       Chinese # English or Chinese
-location:       中关村,4,2 # Room, Floor, Building
-theme:          当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
+date: 2021/10/13 #yyyy/mm/dd
+language:       English # English or Chinese
+location:       TianAnMen,1,1 # Room, Floor, Building
+theme:          
 roles:
   SAA:      Jinyu Wang
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Wenji Gao
-  GE:       Raymond Lu
-  Timer:    
-  Ah-Counter:
-  Wordsmith: 
-  TTM: 
-  TTE: 
-  SP1:      Yue Li
-  SP1 Title:      遗落在大山中的记忆
-  IE1:      Marissa Wang
-  SP2:      Harper
-  SP2 Title:      失眠和冲浪
-  IE2:      Eileen
+  TM:       Jinyu Wang
+  GE:       Pan Deng
+  Timer:    Aaron
+  Ah-Counter: Guangqi
+  Wordsmith: Wenji
+  TTM: Julia
+  TTE: Raymond Lu
+  SP1:      Henry
+  SP1 Title:      Tangela
+  IE1:      Bonnie Wang
+  SP2:      Christine
+  SP2 Title:      Why do I Learn Physics
+  IE2:      Raymond Lu
   
 
 sessions:
@@ -55,7 +55,7 @@ sessions:
         duration:   1
   
   - title: {default: MS-TED}
-    skip: False 
+    skip: True
     events:
       - role: President
         title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
@@ -124,12 +124,12 @@ sessions:
         duration:   3
         gyr:  2/2.5/3
       - role:       TM
-        skip: True
+        skip: False
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5
 
   - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    skip:       True
+    skip:       False
     events:
       - role:       TM
         title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
@@ -178,7 +178,7 @@ sessions:
       - role:       SAA
         title:      {default: Guest Feedback (20s/P), Chinese: 访客反馈 (20秒/人)}
         duration:   5
-        skip:       True
+        skip:       False
         gyr:  3/4/5
       - role:       TM
         title:      {default: Conclusion, Chinese: 总结}
