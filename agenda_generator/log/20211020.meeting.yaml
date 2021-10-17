@@ -73,7 +73,7 @@ sessions:
         gyr: 4/5/6
 
       - role:       TM
-        skip: True
+        skip: False
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5      
 
