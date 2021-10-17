@@ -104,7 +104,7 @@ sessions:
         gyr:  1/1.5/2
       - role: Invited Speaker
         taker: Yongdong Wang
-        title: Communication
+        title: On Communication
         duration: 18
         gyr:  14/16/18
       - role: President
@@ -175,7 +175,6 @@ sessions:
     events:
 
       - role:       [GE,TM]
-        skip: True
         title:      {default: Request Feedbacks from Audience, Chinese: 请求听众反馈}
         duration:   1
 
