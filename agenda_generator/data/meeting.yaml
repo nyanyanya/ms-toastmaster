@@ -1,24 +1,24 @@
-date: 2021/10/13 #yyyy/mm/dd
+date: 2021/10/20 #yyyy/mm/dd
 language:       English # English or Chinese
-location:       TianAnMen,1,1 # Room, Floor, Building
-theme:          Music
+location:       GuGong,1,1 # Room, Floor, Building
+theme:          Communication
 roles:
-  SAA:      Jinyu Wang
+  SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Jinyu Wang
-  GE:       Pan Deng
-  Timer:    Aaron
-  Ah-Counter: Guangqi
-  Wordsmith: Wenji
+  TM:       Bill Lin
+  GE:       Raymond Lu
+  Timer:    Christine
+  Ah-Counter: Henry
+  Wordsmith: Frank Zhao
   TTM: Julia
-  TTE: Raymond Lu
-  SP1:      Henry
-  SP1 Title:      Tangela
-  IE1:      Bonnie Wang
-  SP2:      Christine
-  SP2 Title:      Why do I Learn Physics
-  IE2:      Raymond Lu
+  TTE: Nancy
+  SP1:      
+  SP1 Title:      
+  IE1:      
+  SP2:      
+  SP2 Title:      
+  IE2:      
   
 
 sessions:
@@ -36,6 +36,7 @@ sessions:
         gyr:  2/3/4
       - role:       SAA
         title:      {default: Welcome Guests (20s/P), Chinese: 欢迎访客 (20秒/人)}
+        skip:       True
         duration:   5
         gyr:  3/4/5
       - role:       [GE, TM]
@@ -54,16 +55,38 @@ sessions:
         title:      {default: Return Control to Toastmaster, Chinese: 交接回主持人}
         duration:   1
   
+  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
+    skip:       False
+    events:
+      - role:       TM
+        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
+        duration:   1
+
+      - role:       TTM
+        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
+        duration:   25
+        gyr:  1/1.5/2
+
+      - role:       TTE
+        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
+        duration:   6
+        gyr: 4/5/6
+
+      - role:       TM
+        skip: False
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5      
+
   - title: {default: MS-TED}
-    skip: True
+    skip: False
     events:
       - role: President
         title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
         duration:   2
         gyr:  1/1.5/2
       - role: Invited Speaker
-        taker: Marissa Wang
-        title: 当你老了，你可以领到多少钱？ -- 关于养老金，你需要知道的
+        taker: Yongdong Wang
+        title: On Communication
         duration: 18
         gyr:  14/16/18
       - role: President
@@ -71,11 +94,12 @@ sessions:
         duration: 5
         gyr:  3/4/5
       - role:       TM
-        skip: False
+        skip: True
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5      
           
   - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
+    skip: True
     events:
       - role:       TM
         require:    SP1
@@ -128,25 +152,6 @@ sessions:
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5
 
-  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    skip:       False
-    events:
-      - role:       TM
-        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
-        duration:   1
-
-      - role:       TTM
-        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
-        duration:   25
-        gyr:  1/1.5/2
-
-      - role:       TTE
-        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
-        duration:   6
-        gyr: 4/5/6
-
-
-
   - title: {default: Evaluation Session, Chinese: 点评环节}
     #skip:       True
     events:
@@ -178,7 +183,7 @@ sessions:
       - role:       SAA
         title:      {default: Guest Feedback (20s/P), Chinese: 访客反馈 (20秒/人)}
         duration:   5
-        skip:       False
+        skip:       True
         gyr:  3/4/5
       - role:       TM
         title:      {default: Conclusion, Chinese: 总结}
