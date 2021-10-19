@@ -3,12 +3,12 @@ language:       English # English or Chinese
 location:       GuGong,1,1 # Room, Floor, Building
 theme:          Communication
 roles:
-  SAA:      TBD
+  SAA:      Julia/Henry
   VPM:      Bonnie Wang
   President:      Raymond Lu     
   TM:       Bill Lin
   GE:       Raymond Lu
-  Timer:    Christine
+  Timer:    Shaopeng Bu
   Ah-Counter: Henry
   Wordsmith: Frank Zhao
   TTM: Julia
@@ -32,8 +32,8 @@ sessions:
         #  skip:      True # skip events by uncomment this line
       - role:       TM
         title:      {default: Meeting Opening & Privacy Statement, Chinese: 会议开场及隐私声明}
-        duration:   4
-        gyr:  2/3/4
+        duration:   5
+        gyr:  3/4/5
       - role:       SAA
         title:      {default: Welcome Guests (20s/P), Chinese: 欢迎访客 (20秒/人)}
         skip:       True
@@ -109,8 +109,8 @@ sessions:
         gyr:  14/16/18
       - role: President
         title:  {default: Q&A, Chinese: 问答环节}
-        duration: 5
-        gyr:  3/4/5
+        duration: 10
+        gyr:  8/9/10
       - role:       TM
         skip: True
         title:      {default: Break Time, Chinese: 中场休息}
