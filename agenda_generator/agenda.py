@@ -169,7 +169,18 @@ class Agenda:
         return html_template
 
     def __init__(self, language, theme, speech_count=3, location='TianAnMen,1,1'):
-        room, floor, building = location.split(',')
+        if location.strip().lower() == "online":
+            venue = {
+                    "default": "Venue: Online Meeting. (No onsite)",
+                    "Chinese": "地点： 线上会议。 （无线下会场）"
+            }
+        else:
+            room, floor, building = location.split(',')
+            venue = {
+                    "default": "Venue: Room %s, F%s, Microsoft Build %s, Danling St. Zhongguancun West Zone Haidian Dist." % (room, floor, building),
+                    "Chinese": f"地点： 海淀区中关村丹棱街微软大厦{building}号楼{floor}层{room}会议室"
+            }
+
         self._template_str = Agenda.template_localization(
             PathUtil().get_template("default.html"),
             language,
@@ -180,10 +191,7 @@ class Agenda:
                 "speech_count": {
                     "default": str(speech_count),
                 },
-                "venue": {
-                    "default": "Venue: Room %s, F%s, Microsoft Build %s, Danling St. Zhongguancun West Zone Haidian Dist." % (room, floor, building),
-                    "Chinese": f"地点： 海淀区中关村丹棱街微软大厦{building}号楼{floor}层{room}会议室"
-                }
+                "venue": venue
             }
         )
         self._sessions = []  # type: List[Session]
