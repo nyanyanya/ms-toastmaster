@@ -78,6 +78,29 @@ sessions:
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5      
           
+
+        
+  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
+    skip:       False
+    events:
+      - role:       TM
+        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
+        duration:   1
+
+      - role:       TTM
+        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
+        duration:   25
+        gyr:  1/1.5/2
+
+      - role:       TTE
+        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
+        duration:   6
+        gyr: 4/5/6
+      - role:       TM
+        skip: False
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5
+
   - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
     skip: False
     events:
@@ -96,8 +119,8 @@ sessions:
         duration:   1
       - role:       SP2
         title:      $SP2 Title$
-        duration:   10
-        gyr:  6/8/10
+        duration:   7
+        gyr:  5/6/7
 
       - role:       TM
         require:    SP3
@@ -127,27 +150,6 @@ sessions:
         title:      {default: Evaluate Individual Evaluators, Chinese: 点评个人点评官}
         duration:   3
         gyr:  2/2.5/3
-      - role:       TM
-        skip: False
-        title:      {default: Break Time, Chinese: 中场休息}
-        duration:   5
-        
-  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    skip:       False
-    events:
-      - role:       TM
-        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
-        duration:   1
-
-      - role:       TTM
-        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
-        duration:   25
-        gyr:  1/1.5/2
-
-      - role:       TTE
-        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
-        duration:   6
-        gyr: 4/5/6
 
         
   - title: {default: Closing Session, Chinese: 点评环节}
