@@ -1,24 +1,24 @@
-date: 2021/10/20 #yyyy/mm/dd
+date: 2021/11/10 #yyyy/mm/dd
 language:       English # English or Chinese
-location:       GuGong,1,1 # Room, Floor, Building
-theme:          Communication
+location:       online # Room,Floor,Building
+theme:          Another Double Eleven Day
 roles:
-  SAA:      Julia/Henry
+  SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Bill Lin
-  GE:       Raymond Lu
-  Timer:    Shaopeng Bu
-  Ah-Counter: Henry
-  Wordsmith: Frank Zhao
-  TTM: Julia
-  TTE: Nancy
-  SP1:      
-  SP1 Title:      
-  IE1:      
-  SP2:      
-  SP2 Title:      
-  IE2:      
+  TM:       Henry
+  GE:       Bonnie Wang
+  Timer:    Bella
+  Ah-Counter: Christine
+  Wordsmith: Yifan
+  TTM: Raymond
+  TTE: Harper
+  SP1:      Julia
+  SP1 Title:      Carbon Neutral
+  IE1:      Donald Huo
+  SP2:      Bill
+  SP2 Title:      TBD
+  IE2:      Camille
   
 
 sessions:
@@ -29,14 +29,14 @@ sessions:
         title:      {default: Registration/Greeting, Chinese: 注册/问候}
         # taker:    Nan Yang # direct specify taker
         duration:   20
-        #  skip:      True # skip events by uncomment this line
+        skip:      False # skip events by uncomment this line
       - role:       TM
         title:      {default: Meeting Opening & Privacy Statement, Chinese: 会议开场及隐私声明}
         duration:   5
         gyr:  3/4/5
       - role:       SAA
         title:      {default: Welcome Guests (20s/P), Chinese: 欢迎访客 (20秒/人)}
-        skip:       True
+        skip:       False
         duration:   5
         gyr:  3/4/5
       - role:       [GE, TM]
@@ -55,48 +55,10 @@ sessions:
         title:      {default: Return Control to Toastmaster, Chinese: 交接回主持人}
         duration:   1
   
-  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
-    skip:       False
-    events:
-      - role:       TM
-        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
-        duration:   1
-
-      - role:       TTM
-        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
-        duration:   25
-        gyr:  1/1.5/2
-
-      - role:       TTE
-        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
-        duration:   6
-        gyr: 4/5/6
-      - role:       [GE,TM]
-        skip: True
-        title:      {default: Evaluation Session Opening, Chinese: 点评环节开场}
-        duration:   1
-      - role:       Timer
-        title:      {default: Timer's Report, Chinese: 时间官报告}
-        duration:   2
-      - role:       Ah-Counter
-        title:      {default: Ah Counter's Report, Chinese: 哼哈官报告}
-        duration:   2
-        gyr: 1/1.5/2
-      - role:       Wordsmith
-        title:      {default: Word Smith's Report, Chinese: 语法官报告}
-        duration:   2
-        gyr: 1/1.5/2        
-      - role:       GE
-        title:      {default: General Evaluator's Report, Chinese: 总点评官报告}
-        duration:   4        
-
-      - role:       TM
-        skip: True
-        title:      {default: Break Time, Chinese: 中场休息}
-        duration:   5      
+  
 
   - title: {default: MS-TED}
-    skip: False
+    skip: True
     events:
       - role: President
         title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
@@ -117,7 +79,7 @@ sessions:
         duration:   5      
           
   - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
-    skip: True
+    skip: False
     events:
       - role:       TM
         require:    SP1
@@ -169,16 +131,50 @@ sessions:
         skip: False
         title:      {default: Break Time, Chinese: 中场休息}
         duration:   5
+        
+  - title: {default: Table Topic Session, Chinese: 即兴演讲环节}
+    skip:       False
+    events:
+      - role:       TM
+        title:      {default: Introduce the Table Topic Master, Chinese: 介绍即兴演讲主持人}
+        duration:   1
 
+      - role:       TTM
+        title:      {default: Theme Introduction & Table Topic Session, Chinese: 主题介绍及即兴演讲}
+        duration:   25
+        gyr:  1/1.5/2
+
+      - role:       TTE
+        title:      {default: Table Topic Evaluation, Chinese: 点评即兴演讲}
+        duration:   6
+        gyr: 4/5/6
+
+        
   - title: {default: Closing Session, Chinese: 点评环节}
     #skip:       True
     events:
-
       - role:       [GE,TM]
-        skip: True
+        skip: False
+        title:      {default: Evaluation Session Opening, Chinese: 点评环节开场}
+        duration:   1
+      - role:       Timer
+        title:      {default: Timer's Report, Chinese: 时间官报告}
+        duration:   2
+      - role:       Ah-Counter
+        title:      {default: Ah Counter's Report, Chinese: 哼哈官报告}
+        duration:   2
+        gyr: 1/1.5/2
+      - role:       Wordsmith
+        title:      {default: Word Smith's Report, Chinese: 语法官报告}
+        duration:   2
+        gyr: 1/1.5/2        
+      - role:       GE
+        title:      {default: General Evaluator's Report, Chinese: 总点评官报告}
+        duration:   4        
+      - role:       [GE,TM]
+        skip: False
         title:      {default: Request Feedbacks from Audience, Chinese: 请求听众反馈}
         duration:   1
-
         gyr: 2/3/4
       - role:       VPM
         title:      {default: Induction of New Members, Chinese: 新会员加入}
@@ -187,7 +183,7 @@ sessions:
       - role:       SAA
         title:      {default: Guest Feedback (20s/P), Chinese: 访客反馈 (20秒/人)}
         duration:   5
-        skip:       True
+        skip:       False
         gyr:  3/4/5
       - role:       TM
         title:      {default: Conclusion, Chinese: 总结}
