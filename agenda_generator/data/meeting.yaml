@@ -1,24 +1,24 @@
-date: 2021/11/10 #yyyy/mm/dd
+date: 2021/11/17 #yyyy/mm/dd
 language:       English # English or Chinese
 location:       online # Room,Floor,Building
-theme:          Another Double Eleven Day
+theme:          Education
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Henry
-  GE:       Bonnie Wang
-  Timer:    Bella
-  Ah-Counter: Christine
-  Wordsmith: Yifan
-  TTM: Raymond
-  TTE: Harper
-  SP1:      Julia
-  SP1 Title:      Carbon Neutral
-  IE1:      Donald Huo
-  SP2:      Bill
-  SP2 Title:      TBD
-  IE2:      Camille
+  TM:       Julia
+  GE:       Yue Li
+  Timer:    Christine
+  Ah-Counter: Timothy
+  Wordsmith: Eddie
+  TTM: Marissa
+  TTE: Raymond Lu
+  SP1:      Bonnie Wang
+  SP1 Title:      What A Painful Understanding (Level 2 Effective Body Language)
+  IE1:      Nan Wang
+  SP2:      Hongxia Huang
+  SP2 Title:      Cognitive Awakening
+  IE2:      Bill Lin
   
 
 sessions:
