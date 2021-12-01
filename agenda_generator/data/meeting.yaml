@@ -1,24 +1,24 @@
 date: 2021/11/24 #yyyy/mm/dd
-language:       English # English or Chinese
-location:       online # Room,Floor,Building
-theme:          Overcome
+language:       Chinese # English or Chinese
+location:       15D06,5,1 # Room,Floor,Building
+theme:          Alohomora--解锁哈利波特的魔法世界
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Raymond
-  GE:       Henry
-  Timer:    Xinglin
-  Ah-Counter: Megan Chen
+  TM:       Sawyer
+  GE:       Nancy Wang
+  Timer:    Yulong
+  Ah-Counter: 
   Wordsmith:
-  TTM: Christine
-  TTE: Shaopeng Bu
-  SP1:      Bonnie Wang
-  SP1 Title:      Show Your Love
-  IE1:      Nan Wang
-  SP2:      Jimmy Zhang
-  SP2 Title:      Why Climbing is Amazing
-  IE2:      Hongxia Huang
+  TTM: Yue Li
+  TTE: Camille
+  SP1:      Henry
+  SP1 Title:      TBD
+  IE1:      Bill Lin
+  SP2:      Bonnie Wang
+  SP2 Title:      TBD
+  IE2:      Raymond Lu
   
 
 sessions:
