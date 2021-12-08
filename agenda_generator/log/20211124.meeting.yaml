@@ -1,24 +1,24 @@
 date: 2021/11/24 #yyyy/mm/dd
-language:       Chinese # English or Chinese
+language:       English # English or Chinese
 location:       15D06,5,1 # Room,Floor,Building
-theme:          Alohomora--解锁哈利波特的魔法世界
+theme:          A Future with Metaverse
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Sawyer
-  GE:       Nancy Wang
-  Timer:    Yulong
+  TM:       Yue Li
+  GE:       Nan Yang
+  Timer:    Christine
   Ah-Counter: 
   Wordsmith:
-  TTM: Yue Li
-  TTE: Camille
-  SP1:      Henry
+  TTM: Camille
+  TTE: Raymond Lu
+  SP1:      Julia
   SP1 Title:      TBD
-  IE1:      Bill Lin
-  SP2:      Bonnie Wang
+  IE1:      Nancy
+  SP2:      April
   SP2 Title:      TBD
-  IE2:      Raymond Lu
+  IE2:      Hongxia Huang
   
 
 sessions:
