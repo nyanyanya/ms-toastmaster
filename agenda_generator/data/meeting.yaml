@@ -1,24 +1,24 @@
-date: 2021/11/24 #yyyy/mm/dd
+date: 2021/12/15 #yyyy/mm/dd
 language:       English # English or Chinese
 location:       15D06,5,1 # Room,Floor,Building
-theme:          A Future with Metaverse
+theme:          From Involution to Evolution
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Yue Li
-  GE:       Nan Yang
-  Timer:    Christine
-  Ah-Counter: 
-  Wordsmith:
-  TTM: Camille
-  TTE: Raymond Lu
-  SP1:      Julia
+  TM:       Julia
+  GE:       Raymond Lu
+  Timer:    Bingnan
+  Ah-Counter: Christine
+  Wordsmith: Henry
+  TTM: Shaopeng Bu
+  TTE: Pan Deng
+  SP1:      
   SP1 Title:      TBD
-  IE1:      Nancy
-  SP2:      April
+  IE1:      Henry
+  SP2:      
   SP2 Title:      TBD
-  IE2:      Hongxia Huang
+  IE2:      
   
 
 sessions:
@@ -102,7 +102,7 @@ sessions:
         duration:   5
 
   - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
-    skip: False
+    skip: True
     events:
       - role:       TM
         require:    SP1
@@ -151,6 +151,31 @@ sessions:
         duration:   3
         gyr:  2/2.5/3
 
+  - title: {default: Workshop}
+    skip: False
+    events:
+      - role: President
+        title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
+        duration:   2
+        gyr:  1/1.5/2
+      - role: Invited Speaker
+        taker: Aaron
+        title: Speak to Connect
+        duration: 18
+        gyr:  14/16/18
+      - role: President
+        title:  {default: Q&A, Chinese: 问答环节}
+        duration: 10
+        gyr:  8/9/10
+      - role: Workshop Evaluator
+        taker: Henry
+        duration: 2
+        gyr:  1/1.5/2
+        title: {default: Evaluate Workshop}
+      - role:       TM
+        skip: True
+        title:      {default: Break Time, Chinese: 中场休息}
+        duration:   5
         
   - title: {default: Closing Session, Chinese: 点评环节}
     #skip:       True
