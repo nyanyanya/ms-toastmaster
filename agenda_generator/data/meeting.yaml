@@ -1,21 +1,21 @@
-date: 2021/12/15 #yyyy/mm/dd
+date: 2021/12/22 #yyyy/mm/dd
 language:       English # English or Chinese
 location:       15D06,5,1 # Room,Floor,Building
-theme:          From Involution to Evolution
+theme:          New Year Resolutions
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Julia
-  GE:       Raymond Lu
-  Timer:    Bingnan
-  Ah-Counter: Christine
-  Wordsmith: Henry
-  TTM: Shaopeng Bu
-  TTE: Pan Deng
-  SP1:      
+  TM:       Bonnie Wang
+  GE:       Sawyer
+  Timer:    Richard
+  Ah-Counter: 
+  Wordsmith: Yue Li
+  TTM: Henry
+  TTE: Raymond Lu
+  SP1:      Julia
   SP1 Title:      TBD
-  IE1:      Henry
+  IE1:      Hongxia Huang
   SP2:      
   SP2 Title:      TBD
   IE2:      
@@ -102,7 +102,7 @@ sessions:
         duration:   5
 
   - title: {default: Prepared Speech Session, Chinese: 备稿演讲环节}
-    skip: True
+    skip: False
     events:
       - role:       TM
         require:    SP1
@@ -152,7 +152,7 @@ sessions:
         gyr:  2/2.5/3
 
   - title: {default: Workshop}
-    skip: False
+    skip: True
     events:
       - role: President
         title: {default: Introduce the Speaker, Chinese: 介绍演讲者}
