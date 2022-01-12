@@ -1,21 +1,21 @@
-date: 2021/12/22 #yyyy/mm/dd
+date: 2022/01/12 #yyyy/mm/dd
 language:       English # English or Chinese
 location:       15D06,5,1 # Room,Floor,Building
-theme:          New Year Resolutions
+theme:          Books
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Bonnie Wang
-  GE:       Sawyer
-  Timer:    Richard
-  Ah-Counter: 
-  Wordsmith: Yue Li
-  TTM: Henry
-  TTE: Raymond Lu
-  SP1:      Julia
-  SP1 Title:      TBD
-  IE1:      Hongxia Huang
+  TM:       Sawyer
+  GE:       Raymond
+  Timer:    
+  Ah-Counter: Richard
+  Wordsmith: Timothy
+  TTM: Julia
+  TTE: Pan Deng
+  SP1:      Curly
+  SP1 Title:      How to Become a Good Evaluator
+  IE1:      Sawyer
   SP2:      
   SP2 Title:      TBD
   IE2:      
@@ -110,8 +110,8 @@ sessions:
         duration:   1
       - role:       SP1
         title:      $SP1 Title$
-        duration:   7
-        gyr:  5/6/7
+        duration:   25
+        gyr:  20/23/25
 
       - role:       TM
         require:    SP2
