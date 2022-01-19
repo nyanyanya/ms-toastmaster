@@ -1,24 +1,24 @@
-date: 2022/01/12 #yyyy/mm/dd
+date: 2022/01/19 #yyyy/mm/dd
 language:       English # English or Chinese
 location:       15D06,5,1 # Room,Floor,Building
-theme:          Books
+theme:          Inflation
 roles:
   SAA:      TBD
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Sawyer
+  TM:       Julia
   GE:       Raymond
-  Timer:    
-  Ah-Counter: Richard
-  Wordsmith: Timothy
-  TTM: Julia
-  TTE: Pan Deng
-  SP1:      Curly
-  SP1 Title:      How to Become a Good Evaluator
-  IE1:      Sawyer
-  SP2:      
-  SP2 Title:      TBD
-  IE2:      
+  Timer:    Yue Li
+  Ah-Counter: 
+  Wordsmith: 
+  TTM: Bill
+  TTE: Susie Fang
+  SP1:      Sawyer Li
+  SP1 Title:      New Club
+  IE1:      Curly
+  SP2:      Shaopeng Bu
+  SP2 Title:      Culture Fan
+  IE2:      Larry Lei
   
 
 sessions:
