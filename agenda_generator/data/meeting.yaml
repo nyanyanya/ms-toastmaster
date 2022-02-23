@@ -1,24 +1,24 @@
-date: 2022/01/19 #yyyy/mm/dd
-language:       English # English or Chinese
+date: 2022/02/23 #yyyy/mm/dd
+language:       Chinese # English or Chinese
 location:       15D06,5,1 # Room,Floor,Building
-theme:          Inflation
+theme:          对抗焦虑
 roles:
-  SAA:      TBD
+  SAA:      
   VPM:      Bonnie Wang
   President:      Raymond Lu     
-  TM:       Julia
-  GE:       Raymond
-  Timer:    Yue Li
+  TM:       Raymond
+  GE:       Curly
+  Timer:    Yuzhu
   Ah-Counter: 
-  Wordsmith: 
-  TTM: Bill
-  TTE: Susie Fang
-  SP1:      Sawyer Li
-  SP1 Title:      New Club
-  IE1:      Curly
-  SP2:      Shaopeng Bu
-  SP2 Title:      Culture Fan
-  IE2:      Larry Lei
+  Wordsmith: Tim Coghlan
+  TTM: JUlia
+  TTE: Xinglin
+  SP1:      Hongxia Huang
+  SP1 Title:      无人区
+  IE1:      Eileen
+  SP2:      Sawyer Li
+  SP2 Title:      TBD
+  IE2:      Yue Li
   
 
 sessions:
